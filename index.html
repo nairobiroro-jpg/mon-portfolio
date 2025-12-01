@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MonPortfolio.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#hobbies">Loisirs</a></li>
+            <li><a href="#contact" class="btn-contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span class="highlight">KOUASSI A Roméo</span></h1>
+            <p>Bienvenue sur mon portfolio personnel. Je transforme des idées en réalité numérique.</p>
+            <a href="#projects" class="btn-main">Voir mes travaux</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">À Propos de Moi</h2>
+        <div class="about-grid">
+            <div class="about-img">
+                <img src="images/profil.jpeg" alt="Ma photo de profil">
+            </div>
+            <div class="about-text">
+                <h3>Passionné par le numérique et l'entrepreneuriat</h3>
+                <p>Basé au Togo, je suis actuellement en formation D-CLIC OIF. Mon objectif est de créer des solutions web utiles pour l'Afrique. Je me spécialise dans le développement web et mobile.</p>
+                <div class="info-box">
+                    <div><i class="fas fa-map-marker-alt"></i> Lomé, Togo</div>
+                    <div><i class="fas fa-envelope"></i> kouassiaromeo@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container bg-light">
+        <h2 class="section-title">Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Structure sémantique</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Design Responsive & Flexbox</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Interactivité & DOM</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git & GitHub</h3>
+                <p>Gestion de version</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Mes Projets Récents</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/house-6971496_1280.jpg" alt="Projet Immobilier">
+                <div class="card-content">
+                    <h3>Plateforme Immobilière</h3>
+                    <p>Une application web pour faciliter la recherche de chambres, maisons et villas à louer ou vendre au Togo.</p>
+                    <a href="#" class="btn-small">Voir le code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/55 i.jpeg" alt="Projet Ebook">
+                <div class="card-content">
+                    <h3>55 Idées de Business</h3>
+                    <p>Site de présentation et vente pour mon ebook sur l'entrepreneuriat en Afrique.</p>
+                    <a href="#" class="btn-small">Voir le site</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/lavander-products-1191908_1280.jpg" alt="Projet E-commerce">
+                <div class="card-content">
+                    <h3>E-commerce Santé</h3>
+                    <p>Boutique en ligne spécialisée avec intégration de produits Alibaba et stratégies marketing.</p>
+                    <a href="#" class="btn-small">En cours</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="container bg-light">
+        <h2 class="section-title">Centres d'intérêt</h2>
+        <div class="hobbies-list">
+            <div class="hobby-item">🎵 Musique (Fan d'Omah Lay)</div>
+            <div class="hobby-item">🎬 Cinéma (Univers Marvel)</div>
+            <div class="hobby-item">⚽ Sport</div>
+            <div class="hobby-item">💼 Entrepreneuriat Africain</div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Me Contacter</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="votre@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required placeholder="Votre message..."></textarea>
+            </div>
+            <button type="submit" class="btn-main">Envoyer le message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Portfolio. Créé dans le cadre du programme D-CLIC OIF.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
